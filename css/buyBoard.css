@@ -1,0 +1,226 @@
+body {
+  background-color: rgb(16, 40, 61);
+}
+.table {
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 30px;
+  background-color: whitesmoke;
+  border: 5px solid rgb(72, 150, 53);
+  border-top: 15px solid rgb(72, 150, 53);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carIcon {
+  height: 120px;
+  width: 180px;
+}
+
+.buyBoard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buyBoard button {
+  width: 25%;
+  text-align: center;
+  margin: 10px;
+}
+#warning {
+  color: red;
+  position: absolute;
+}
+
+@media screen and (max-width: 480px){
+  .carIcon {
+    position: absolute;
+    height: 150px;
+    width: 170px;
+    margin-left: 20%;
+    margin-top: -30%;
+    opacity: 0.3;
+    
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 10%;
+    text-align: center;
+  }
+  h3{
+    margin-top: -5%;
+    text-align: center;
+  }
+  #deliveryDate {
+    text-align: center;
+    margin-top: -5%;
+  }
+  span{
+    text-align: center;
+  }
+  .additionalOptions {
+    margin:5%;
+    text-align: center;
+  }
+  .paymentMethod{
+    text-align: center;
+  }
+  .nameForname{
+    height: 5vh;
+    width: 80%;
+  }
+  .buyBoard button {
+    width: 100px;
+    margin-top: 10%;
+  }
+  #warning{
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 481px) and  (min-width: 768px) {
+  .carIcon {
+    height: 150px;
+    width: 180px;
+    margin-left: 2%;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: -20%;
+    text-align: center;
+  }
+  h3 {
+    font-size: 13px;
+    text-align: center;
+  }
+  #deliveryDate {
+    text-align: center;
+  }
+
+  span {
+    text-align: center;
+    font-weight: bold;
+  }
+  .additionalOptions {
+    text-align: center;
+    margin: 20px;
+  }
+  .paymentMethod {
+    text-align: center;
+  }
+  .nameForname {
+    width: 60vw;
+    margin: 0px 10px;
+    margin-bottom: 10px;
+  }
+  .buyBoard button {
+    width: 25%;
+    text-align: center;
+    margin: 18px;
+  }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .carIcon {
+    height: 180px;
+    width: 240px;
+    transform: translate(0%, -6%);
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  #deliveryDate {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  span {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .paymentMethod {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .nameForname {
+    width: 60vw;
+  }
+
+  .buyBoard button {
+    width: 25%;
+    text-align: center;
+    margin: 18px;
+   
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .carIcon {
+    height: 120px;
+    width: 180px;
+    transform: translate(30%, -20%);
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20%;
+  }
+  h3 {
+    font-size: 15px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  #deliveryDate {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  span {
+    text-align: center;
+    font-weight: bold;
+  }
+  .additionalOptions {
+
+    margin: 20px 350px;
+  }
+  .paymentMethod {
+    margin: 20px;
+    text-align: center;
+  }
+  .nameForname {
+    width: 60vw;
+    height: 5vh;
+    margin: 0px 10px;
+    margin-bottom: 10px;
+  }
+  #warning {
+  
+    margin-top: 50px;
+  }
+  .label{
+    margin-left: 5%;
+  }
+
+  .buyBoard button {
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    transform: translate(-130%, 60%);
+  }
+  #buy {
+    margin-left: 50%;
+  }
+}

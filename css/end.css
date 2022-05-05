@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 70%;
+  border: 5px solid rgb(72, 150, 53);
+  border-top: 15px solid rgb(72, 150, 53);
+  background-color: whitesmoke;
+  position: absolute;
+}
+
+.carBuyIcon {
+  margin: 1%;
+  height: 200px;
+  width: 220px;
+}
+h2 {
+  position: relative;
+  margin-top: -10%;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+button {
+  width: 10%;
+  margin-left: 85%;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .carBuyIcon {
+    opacity: 0.3;
+    position: absolute;
+    margin: 14%;
+    margin-top: 2%;
+  }
+  h2 {
+    margin-top: 2%;
+  }
+  button {
+    width: 20%;
+    margin: 2% auto;
+  }
+}
+@media only screen and (min-width: 481px) and (min-width: 768px) {
+  .board {
+    margin-top: -18%;
+  }
+  h2 {
+    margin-top: 2%;
+  }
+  button {
+    width: 20%;
+    margin: 2% auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .board {
+    margin-top: -14%;
+  }
+  h2 {
+    margin-top: 1%;
+  }
+  button {
+    width: 20%;
+    margin: 2% auto;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .board {
+    transform: translate(0%,15%);
+  }
+  .carBuyIcon {
+    width: 220px;
+    height: 150px;
+  }
+  h2 {
+    margin-top: 1%;
+  }
+  button {
+    width: 20%;
+    margin: 2% auto;
+  }
+}

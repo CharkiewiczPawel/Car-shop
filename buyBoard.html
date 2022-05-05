@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/buyBoard.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Buy Board</title>
+  </head>
+  <body>
+    <main class="table">
+      <img
+        src="/asetss/icons/auto2.png"
+        alt="Ikona samochodu"
+        class="carIcon"
+        id="carIcon"
+      />
+      <h1 id="nameCar">Nazwa Samochodu</h1>
+      <h3 id="carPrie">Cena : xxxx</h3>
+      <p id="deliveryDate">Data odbioru: 00-00-0000</p>
+      <span>Opcje dodatkowe</span>
+      <div class="additionalOptions">
+        <label for="tire" class="label">Opony zimowe</label>
+        <input type="checkbox" name="tire" id="tire" />
+
+        <label for="chassis" class="label">Konserwacja podwozia</label>
+        <input type="checkbox" name="chassis" id="chassis" />
+
+        <label for="oc" class="label">OC</label>
+        <input type="checkbox" name="chassis" id="oc" />
+      </div>
+      <div class="paymentMethod">
+        <label for="cashOrLeasing" >Gotówka</label>
+        <input type="radio" name="cashOrLeasing" id="cash" />
+        <label for="cashOrLeasing">Leasing</label>
+        <input type="radio" name="cashOrLeasing" id="leasing" />
+      </div>
+      <div class="buyBoard">
+        <input
+          type="text"
+          placeholder="Imię i Nazwisko"
+          class="nameForname"
+          id="nameAndForname"
+          value=""
+        />
+        <p id="warning"></p>
+        <button id="back">Wstecz</button>
+        <button id="buy">Kup</button>
+      </div>
+    </main>
+
+    <script src="/scripts/buyBoard.js"></script>
+  </body>
+</html>
