@@ -214,50 +214,18 @@ const insertCar = function () {
     createCar(i);
   }
 };
-//search engines - obsługa wyszukiwarki
 
+//search engines - obsługa wyszukiwarki
 $checkItOut.addEventListener("click", () => {
   const allCarsInSection = [...document.querySelectorAll("section")];
   allCarsInSection.forEach((e) => (e.style.display = "none"));
-  const search = $searchBrand.value.toLowerCase();
-  if (search === "volvo") {
-    const classVolvo = [...document.querySelectorAll(".volvo")];
-    classVolvo.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "buick") {
-    const classBuick = [...document.querySelectorAll(".buick")];
-    classBuick.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "fiat") {
-    const classFiat = [...document.querySelectorAll(".fiat")];
-    classFiat.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "ford") {
-    const classFord = [...document.querySelectorAll(".ford")];
-    classFord.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "peugeot") {
-    const classPeugeot = [...document.querySelectorAll(".peugeot")];
-    classPeugeot.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "scania") {
-    const classScania = [...document.querySelectorAll(".scania")];
-    classScania.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "subaru") {
-    const classSubaru = [...document.querySelectorAll(".subaru")];
-    classSubaru.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "toyota") {
-    const classToyota = [...document.querySelectorAll(".toyota")];
-    classToyota.forEach((e) => (e.style.display = "flex"));
-  }
-  if (search === "jeep") {
-    const classJeep = [...document.querySelectorAll(".jeep")];
-    classJeep.forEach((e) => (e.style.display = "flex"));
-  }
+  const search = $searchBrand.value.toLocaleLowerCase();
+
   if (search === "" || search === "wszystko") {
     allCarsInSection.forEach((e) => (e.style.display = "flex"));
+  } else {
+    const foundCars = [...document.querySelectorAll(`.${search}`)];
+    foundCars.forEach((e) => (e.style.display = "flex"));
   }
 });
 
